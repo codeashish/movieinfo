@@ -1,0 +1,28 @@
+
+<body style="background-color: #eee"  >
+
+<h1 style="color: saddlebrown"  >Results Page:</h1>
+<ul  >
+
+
+<% data.Search.forEach(function(movie){ %>
+<li>  <strong style="color: red" >  <%= movie.Title %></strong>
+    
+    
+    
+   <b> -</b>   <span style="color: royalblue" > <%= movie.Year%> </span>
+   <b> -</b> <span style="color: royalblue" > <%= movie.imdbID%> </span> 
+<br><br>
+      <img src="<%=movie.Poster%>" alt="Poster Not Available">
+
+         
+   
+   </li>
+
+
+
+<%});%>
+</ul>
+<a href="/">  <button style="border: 1px solid blue ;background-color: lightblue"  >Search Again</button>          </a>
+
+</body>
